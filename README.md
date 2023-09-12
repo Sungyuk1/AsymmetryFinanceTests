@@ -63,7 +63,7 @@ Under "SPONSORS ADD INFO HERE" heading below, include the following:
 
 ---
 
-# AfEth audit details
+# AfEth Invitational audit details
 - Total Prize Pool: $31,310 USDC 
   - HM awards: $18,252 USDC 
   - Analysis awards: $1,014 USDC 
