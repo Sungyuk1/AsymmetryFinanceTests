@@ -40,25 +40,19 @@ Some of the checklists in this doc are for **C4 (🐺)** and some of them are fo
 
 ---
 
-## ⭐️ Sponsor: Edit this README
+## ⭐️ Sponsor: Edit this `README.md` file
 
-Under "SPONSORS ADD INFO HERE" heading below, include the following:
-
-- [ ] Modify the bottom of this `README.md` file to describe how your code is supposed to work with links to any relevent documentation and any other criteria/details that the C4 Wardens should keep in mind when reviewing. ([Here's a well-constructed example.](https://github.com/code-423n4/2022-08-foundation#readme))
-  - [ ] When linking, please **provide all links as full absolute links** versus relative links
-  - [ ] All information should be provided in markdown format (HTML does not render on Code4rena.com)
-- [ ] Under the "Scope" heading, provide the name of each contract and:
-  - [ ] source lines of code (excluding blank lines and comments) in each
-  - [ ] external contracts called in each
-  - [ ] libraries used in each
-- [ ] Describe any novel or unique curve logic or mathematical models implemented in the contracts
-- [ ] Does the token conform to the ERC-20 standard? In what specific ways does it differ?
-- [ ] Describe anything else that adds any special logic that makes your approach unique
-- [ ] Identify any areas of specific concern in reviewing the code
+- [ ] Modify the contents of this `README.md` file. Describe how your code is supposed to work with links to any relevent documentation and any other criteria/details that the C4 Wardens should keep in mind when reviewing. ([Here's a well-constructed example.](https://github.com/code-423n4/2022-08-foundation#readme))
 - [ ] Review the Gas award pool amount. This can be adjusted up or down, based on your preference - just flag it for Code4rena staff so we can update the pool totals across all comms channels.
-- [ ] Ensure that all links and image/file paths in this README use absolute paths, not relative paths. 
 - [ ] Optional / nice to have: pre-record a high-level overview of your protocol (not just specific smart contract functions). This saves wardens a lot of time wading through documentation.
-- [ ] See also: [this checklist in Notion](https://code4rena.notion.site/Key-info-for-Code4rena-sponsors-f60764c4c4574bbf8e7a6dbd72cc49b4#0cafa01e6201462e9f78677a39e09746)
+- [ ] [This checklist in Notion](https://code4rena.notion.site/Key-info-for-Code4rena-sponsors-f60764c4c4574bbf8e7a6dbd72cc49b4#0cafa01e6201462e9f78677a39e09746) provides some best practices for Code4rena audits.
+
+## ⭐️ Sponsor: Final touches
+- [ ] Review and confirm the details in the section titled "Scoping details" and alert Code4rena staff of any changes.
+- [ ] Check that images and other files used in this README have been uploaded to the repo as a file and then linked in the README using absolute path (e.g. `https://github.com/code-423n4/yourrepo-url/filepath.png`)
+- [ ] Ensure that *all* links and image/file paths in this README use absolute paths, not relative paths
+- [ ] Check that all README information is in markdown format (HTML does not render on Code4rena.com)
+- [ ] Remove any part of this template that's not relevant to the final version of the README (e.g. instructions in brackets and italic)
 - [ ] Delete this checklist and all text above the line below when you're ready.
 
 ---
@@ -82,21 +76,36 @@ Under "SPONSORS ADD INFO HERE" heading below, include the following:
 
 ## Automated Findings / Publicly Known Issues
 
-Automated findings output for the audit can be found [here](https://github.com/code-423n4/2023-09-asymmetry/bot-report.md) within 24 hours of audit opening.
+Automated findings output for the audit can be found [here](bot-report.md) within 24 hours of audit opening.
 
 *Note for C4 wardens: Anything included in the automated findings output is considered a publicly known issue and is ineligible for awards.*
 
-[ ⭐️ ↓SPONSORS ADD INFO HERE↓ ]
+[ ⭐️ SPONSORS: Are there any known issues or risks deemed acceptable that shouldn't lead to a valid finding? If so, list them here. ]
+
 
 # Overview
 
-*Please provide some context about the code being audited, and identify any areas of specific concern in reviewing the code. (This is a good place to link to your docs, if you have them.)*
+[ ⭐️ SPONSORS: add info here ]
+
+## Links
+
+- **Previous audits:** 
+- **Documentation:**
+- **Website:**
+- **Twitter:** 
+- **Discord:** 
+
 
 # Scope
 
-*List all files in scope in the table below (along with hyperlinks) -- and feel free to add notes here to emphasize areas of focus.*
+[ ⭐️ SPONSORS: add scoping and technical details here ]
 
-*For line of code counts, we recommend running prettier with a 100-character line length, and using [cloc](https://github.com/AlDanial/cloc).* 
+- [ ] In the table format shown below, provide the name of each contract and:
+  - [ ] source lines of code (excluding blank lines and comments) in each *For line of code counts, we recommend running prettier with a 100-character line length, and using [cloc](https://github.com/AlDanial/cloc).* 
+  - [ ] external contracts called in each
+  - [ ] libraries used in each
+
+*List all files in scope in the table below (along with hyperlinks) -- and feel free to add notes here to emphasize areas of focus.*
 
 | Contract | SLOC | Purpose | Libraries used |  
 | ----------- | ----------- | ----------- | ----------- |
@@ -108,11 +117,25 @@ Automated findings output for the audit can be found [here](https://github.com/c
 
 # Additional Context
 
-*Describe any novel or unique curve logic or mathematical models implemented in the contracts*
+- [ ] Describe any novel or unique curve logic or mathematical models implemented in the contracts
+- [ ] Please list specific ERC20 that your protocol is anticipated to interact with. Could be "any" (literally anything, fee on transfer tokens, ERC777 tokens and so forth) or a list of tokens you envision using on launch.
+- [ ] Please list specific ERC721 that your protocol is anticipated to interact with.
+- [ ] Which blockchains will this code be deployed to, and are considered in scope for this audit?
+- [ ] Please list all trusted roles (e.g. operators, slashers, pausers, etc.) and any conditions under which privilege escalation is expected/allowable
+- [ ] In the event of a DOS, could you outline a minimum duration after which you would consider a finding to be valid? This question is asked in the context of most systems' capacity to handle DoS attacks gracefully for a certain period.
+- [ ] Is any part of your implementation intended to conform to any EIP's? If yes, please list the contracts in this format: 
+  - `Contract1`: Should comply with `ERC/EIPX`
+  - `Contract2`: Should comply with `ERC/EIPY`
 
-*Sponsor, please confirm/edit the information below.*
+## Attack ideas (Where to look for bugs)
+*List specific areas to address - see [this blog post](https://medium.com/code4rena/the-security-council-elections-within-the-arbitrum-dao-a-comprehensive-guide-aa6d001aae60#9adb) for an example*
+
+## Main invariants
+*Describe the project's main invariants (properties that should NEVER EVER be broken).*
 
 ## Scoping Details 
+[ ⭐️ SPONSORS: please confirm/edit the information below. ]
+
 ```
 - If you have a public code repo, please share it here:  
 - How many contracts are in scope?:   
