@@ -69,7 +69,7 @@ Some of the checklists in this doc are for **C4 (🐺)** and some of them are fo
   - Scout awards: $500 USDC 
   - Mitigation Review: $7,150 USDC (*Opportunity goes to top 3 certified wardens based on placement in this audit.*)
 - Join [C4 Discord](https://discord.gg/code4rena) to register
-- Submit findings [using the C4 form](https://code4rena.com/contests/2023-09-asymmetry/submit)
+- Submit findings [using the C4 form](https://code4rena.com/contests/2023-09-asymmetry-finance-afeth-invitational/submit)
 - [Read our guidelines for more details](https://docs.code4rena.com/roles/wardens)
 - Starts September 18, 2023 20:00 UTC 
 - Ends September 25, 2023 20:00 UTC 
