@@ -95,9 +95,7 @@ Coming soon
 
 # Scope
 
-[ ⭐️ SPONSORS: add scoping and technical details here ]
-
-- [ ] In the table format shown below, provide the name of each contract and:
+  - [ ] In the table format shown below, provide the name of each contract and:
   - [ ] source lines of code (excluding blank lines and comments) in each *For line of code counts, we recommend running prettier with a 100-character line length, and using [cloc](https://github.com/AlDanial/cloc).* 
   - [ ] external contracts called in each
   - [ ] libraries used in each
@@ -144,7 +142,6 @@ Users will gain rewards
 Funds cannot be permanently locked
 
 ## Scoping Details 
-[ ⭐️ SPONSORS: please confirm/edit the information below. ]
 
 ```
 - If you have a public code repo, please share it here:  
