@@ -104,14 +104,14 @@ Coming soon
 
 | Contract | SLOC | Purpose | Libraries used |  
 | ----------- | ----------- | ----------- | ----------- |
-| [contracts/AfEth.sol](contracts/AfEth.sol) | 260 | This contract is the main point of entry into the protocol| [`@openzeppelin/*`](https://openzeppelin.com/contracts/) |
-| [contracts/strategies/AbstractStrategy.sol](contracts/strategies/AbstractStrategy.sol) | 31 | This is an abstract contract for strategies (there's only one strategy for now)| [`@openzeppelin/*`](https://openzeppelin.com/contracts/) |
-| [contracts/strategies/votium/VotiumStrategyCore.sol](contracts/strategies/votium/VotiumStrategyCore.sol) | 308 | This is the base contract for the votium strategy | [`@openzeppelin/*`](https://openzeppelin.com/contracts/) |
-| [contracts/strategies/votium/VotiumStrategy.sol](contracts/strategies/votium/VotiumStrategy.sol) | 174 | This is the main contract for the votium strategy that inherits AbstractStrategy | [`@openzeppelin/*`](https://openzeppelin.com/contracts/) |
+| [contracts/AfEth.sol](https://github.com/code-423n4/2023-09-asymmetry/blob/main/contracts/AfEth.sol) | 260 | This contract is the main point of entry into the protocol| [`@openzeppelin/*`](https://openzeppelin.com/contracts/) |
+| [contracts/strategies/AbstractStrategy.sol](https://github.com/code-423n4/2023-09-asymmetry/blob/main/contracts/strategies/AbstractStrategy.sol) | 31 | This is an abstract contract for strategies (there's only one strategy for now)| [`@openzeppelin/*`](https://openzeppelin.com/contracts/) |
+| [contracts/strategies/votium/VotiumStrategyCore.sol](https://github.com/code-423n4/2023-09-asymmetry/blob/main/contracts/strategies/votium/VotiumStrategyCore.sol) | 308 | This is the base contract for the votium strategy | [`@openzeppelin/*`](https://openzeppelin.com/contracts/) |
+| [contracts/strategies/votium/VotiumStrategy.sol](https://github.com/code-423n4/2023-09-asymmetry/blob/main/contracts/strategies/votium/VotiumStrategy.sol) | 174 | This is the main contract for the votium strategy that inherits AbstractStrategy | [`@openzeppelin/*`](https://openzeppelin.com/contracts/) |
 
 ## Out of scope
 
-*List any files/contracts that are out of scope for this audit.*
+Anything that is not in the **scope** table
 
 # Additional Context
 
