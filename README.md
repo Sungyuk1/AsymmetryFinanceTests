@@ -86,11 +86,10 @@ Coming soon
 
 ## Links
 
-- **Previous audits:** 
-- **Documentation:**
-- **Website:**
-- **Twitter:** 
-- **Discord:** 
+- **Previous audits:** https://github.com/code-423n4/2023-03-asymmetry
+- **Website:** https://www.asymmetry.finance/
+- **Twitter:** https://twitter.com/asymmetryfin
+- **Discord:** https://discord.gg/9USExBeD
 
 
 # Scope
@@ -115,15 +114,18 @@ Anything that is not in the **scope** table
 
 # Additional Context
 
-- [ ] Describe any novel or unique curve logic or mathematical models implemented in the contracts
-- [ ] Please list specific ERC20 that your protocol is anticipated to interact with. Could be "any" (literally anything, fee on transfer tokens, ERC777 tokens and so forth) or a list of tokens you envision using on launch.
-- [ ] Please list specific ERC721 that your protocol is anticipated to interact with.
-- [ ] Which blockchains will this code be deployed to, and are considered in scope for this audit?
-- [ ] Please list all trusted roles (e.g. operators, slashers, pausers, etc.) and any conditions under which privilege escalation is expected/allowable
-- [ ] In the event of a DOS, could you outline a minimum duration after which you would consider a finding to be valid? This question is asked in the context of most systems' capacity to handle DoS attacks gracefully for a certain period.
-- [ ] Is any part of your implementation intended to conform to any EIP's? If yes, please list the contracts in this format: 
-  - `Contract1`: Should comply with `ERC/EIPX`
-  - `Contract2`: Should comply with `ERC/EIPY`
+  This contract uses two ERC20's.  SafEth + vETH (created by VotiumStrategy.sol).
+  For rewards there could be theoretically any ERC20's that come in as rewards from Votium
+
+  This will only be deployed to Ethereum Mainnet, with the chance of being deployed on L2's on a future date
+
+  There are a few roles for the VotiumStrategy.sol contract
+  - Manager - The AfEth.sol contract
+  - Owner - The DAO's multisig
+  - Rewarder - Address of wallet that will handle calling the reward functions and swapping the tokens out
+
+  The owner role of AfEth.sol will be the DAO's multisig
+
 
 ## Attack ideas (Where to look for bugs)
 *List specific areas to address - see [this blog post](https://medium.com/code4rena/the-security-council-elections-within-the-arbitrum-dao-a-comprehensive-guide-aa6d001aae60#9adb) for an example*
@@ -165,6 +167,6 @@ Funds cannot be permanently locked
 
 # Tests
 
-*Provide every step required to build the project from a fresh git clone, as well as steps to run the tests with a gas report.* 
-
-*Note: Many wardens run Slither as a first pass for testing.  Please document any known errors with no workaround.* 
+- Copy .env.sample to .env file
+- Run `yarn && yarn compile`
+- Run `yarn test`
