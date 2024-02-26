@@ -5,6 +5,8 @@ const { expect } = require("chai");
 
 //import { MULTI_SIG, RETH_DERIVATIVE, WST_DERIVATIVE } from "../../test/constants";
 const { MULTI_SIG, RETH_DERIVATIVE, WST_DERIVATIVE } = require("../../test/constants");
+const { derivativeAbi } = require("../../test/abis/derivativeAbi");
+const { safEthAbi } = require("../../test/abis/safEthAbi");
 
 //import { SignerWithAddress } from "@nomiclabs/hardhat-ethers/signers";
 
@@ -15,6 +17,9 @@ function delay(milliseconds){
 }
 
 describe("Test AfEth", async function () {
+
+    const initialStake = ethers.utils.parseEther(".1");
+    const initialStakeAccount = 11;
 
 
     //reset mainnet to certain block for testing
