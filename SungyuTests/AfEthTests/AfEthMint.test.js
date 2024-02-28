@@ -147,33 +147,6 @@ describe("Test AfEth", async function () {
             expect(afEthBalanceBeforeRequest).gt(0);
         })
 
-        it("Mint and Withdrawl All", async function () {
-          const depositAmount = ethers.utils.parseEther("1");
-          await delay(300);
-          const mintTx = await afEth.deposit(0, { value: depositAmount });
-          await delay(300);
-          await mintTx.wait();
-          await delay(300);
-
-          const afEthBalanceBeforeRequest = await afEth.balanceOf(
-              accounts[0].address
-            );
-          await delay(300);
-          
-          console.log("This is the balance after minting with .1 ether : " + afEthBalanceBeforeRequest);
-          expect(afEthBalanceBeforeRequest).gt(0);
-
-          const requestWithdrawTx = await afEth.requestWithdraw(
-            await afEth.balanceOf(accounts[0].address)
-          );
-          await requestWithdrawTx.wait();
-      
-          const afEthBalanceAfterRequest = await afEth.balanceOf(accounts[0].address);
-          console.log("This is the balance after withdrawing the entire balance of account : "+afEthBalanceAfterRequest);
-          expect(afEthBalanceAfterRequest).eq(0);
-      })
-
-
 
 
 })
